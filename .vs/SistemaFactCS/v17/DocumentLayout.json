@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\m_seleccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\m_seleccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\m_seleccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\m_seleccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\modelo\\clsusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\modelo\\clsusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\logica\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\logica\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\logica\\clsconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\logica\\clsconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\clases\\clsmensajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\clases\\clsmensajes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\App.config",
+              "RelativeDocumentMoniker": "SistemaFactCS\\App.config",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\App.config",
+              "RelativeToolTip": "SistemaFactCS\\App.config",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-19T07:17:31.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "M_SeleccionUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_SeleccionUsuario.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\M_SeleccionUsuario.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_SeleccionUsuario.cs",
+              "RelativeToolTip": "SistemaFactCS\\M_SeleccionUsuario.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAhwDgAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T06:45:18.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "M_SeleccionUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_SeleccionUsuario.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\M_SeleccionUsuario.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_SeleccionUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaFactCS\\M_SeleccionUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T03:12:51.327Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuariosLogica.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "RelativeToolTip": "SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAIA9wEoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T06:09:58.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "clsUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Modelo\\clsUsuarios.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\Modelo\\clsUsuarios.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Modelo\\clsUsuarios.cs",
+              "RelativeToolTip": "SistemaFactCS\\Modelo\\clsUsuarios.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T05:59:18.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "clsMensajes.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\clases\\clsMensajes.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\clases\\clsMensajes.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\clases\\clsMensajes.cs",
+              "RelativeToolTip": "SistemaFactCS\\clases\\clsMensajes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T05:04:32.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsCONEXION.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "RelativeToolTip": "SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAIAwwFIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T04:35:01.437Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
