@@ -18,13 +18,17 @@ namespace SistemaFactCS
 {
     public partial class M_SeleccionUsuario: Form
     {
+        //Propiedades
         UsuariosLogica usuLog = new UsuariosLogica();
         DataTable dt = new DataTable();
         int cont = 0;
         clsMensajes msg = new clsMensajes();
+
         public M_SeleccionUsuario()
         {
             InitializeComponent();
+            btnMinimize.Enabled = false;
+            btnMinimize.Visible = false;
         }
 
         private void M_SeleccionUsuario_Load(object sender, EventArgs e)
@@ -55,6 +59,7 @@ namespace SistemaFactCS
             btn.Font = flow.Font;
             btn.FillColor = System.Drawing.Color.FromArgb( r, g, b);
             btn.HoverState.ForeColor = System.Drawing.Color.CornflowerBlue;
+            btn.HoverState.FillColor = System.Drawing.Color.FromArgb(r, g, b);
             btn.Margin = new Padding(7, 15, 7, 0);
             btn.Dock = DockStyle.Bottom;
 
@@ -67,7 +72,11 @@ namespace SistemaFactCS
         private void BotonUsu_Click(object sender, EventArgs e)
         {
             Guna2Button btnClick = sender as Guna2Button;
-            msg.mensaje("Evento accionado correctamente", "Acción completa", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            P_Login p_Login = new P_Login();
+            p_Login.Show();
+            p_Login.Select();
+            p_Login.txtUsuario.Text = btnClick.Text;
+            this.Hide();
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -78,6 +87,24 @@ namespace SistemaFactCS
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+            btnMaximize.Visible = false;
+            btnMaximize.Enabled = false;
+            btnMinimize.Enabled = true;
+            btnMinimize.Visible = true;
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+            btnMinimize.Visible = false;
+            btnMinimize.Enabled = false;
+            btnMaximize.Visible = true;
+            btnMaximize.Enabled = true;
         }
     }
 }

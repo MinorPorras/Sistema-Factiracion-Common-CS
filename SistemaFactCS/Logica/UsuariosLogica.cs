@@ -35,14 +35,14 @@ namespace SistemaFactCS.Logica
             }
         }
 
-        public int verificarCredenciales(clsUsuarios obj)
+        public clsUsuarios verificarCredenciales(clsUsuarios obj)
         {
-            int respuesta = 0;
-            if (obj == null) 
+            clsUsuarios respuesta = new clsUsuarios();
+            if (obj != null) 
             { 
                 if (Connected())
                 {
-                    string consulta = "SELECT ID FROM usuario WHERE usuario = @usuario AND clave = @clave";
+                    string consulta = "SELECT ID, tipo FROM usuario WHERE usuario = @usuario AND clave = @clave";
                     using (SQLiteCommand cmd = new SQLiteCommand(consulta, db))
                     {
                         cmd.Parameters.AddWithValue("@usuario", obj.usuario.ToString());
@@ -56,9 +56,16 @@ namespace SistemaFactCS.Logica
                         else
                         {
                             Disconnected();
-                            if (int.TryParse(dt.Rows[0].ItemArray[0].ToString(), out respuesta))
+                            if (int.TryParse(dt.Rows[0].ItemArray[0].ToString(), out int ID))
                             {
-                                return respuesta;
+                                respuesta.ID = ID;
+                                if (int.TryParse(dt.Rows[0].ItemArray[1].ToString(), out int tipo))
+                                {
+                                    respuesta.usuario = obj.usuario;
+                                    respuesta.tipo = tipo;
+                                    return respuesta;
+
+                                }
                             }
                         }
                     }

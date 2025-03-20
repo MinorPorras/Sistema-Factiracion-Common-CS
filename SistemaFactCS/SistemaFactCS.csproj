@@ -15,6 +15,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +49,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SistemaFactCS.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -65,6 +83,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -80,6 +99,12 @@
     <Compile Include="clases\clsMensajes.cs" />
     <Compile Include="Logica\UsuariosLogica.cs" />
     <Compile Include="Modelo\clsUsuarios.cs" />
+    <Compile Include="M_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M_Principal.Designer.cs">
+      <DependentUpon>M_Principal.cs</DependentUpon>
+    </Compile>
     <Compile Include="M_SeleccionUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +113,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="P_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_Clientes.Designer.cs">
+      <DependentUpon>P_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_Login.Designer.cs">
+      <DependentUpon>P_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="P_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="P_Usuarios.Designer.cs">
+      <DependentUpon>P_Usuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="M_Principal.resx">
+      <DependentUpon>M_Principal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="M_SeleccionUsuario.es-CR.resx">
       <DependentUpon>M_SeleccionUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +152,15 @@
     <Content Include="Modelo\dbSistemaFacturacion.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="P_Clientes.resx">
+      <DependentUpon>P_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_Login.resx">
+      <DependentUpon>P_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="P_Usuarios.resx">
+      <DependentUpon>P_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,20 +176,65 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="recursos\ICO_Cerrar.png" />
-    <Content Include="recursos\ICO_clave.png" />
-    <Content Include="recursos\ICO_Guardar.png" />
-    <Content Include="recursos\ICO_Image.png" />
-    <Content Include="recursos\ICO_Importar.png" />
-    <Content Include="recursos\ICO_Marcas.png" />
-    <Content Include="recursos\ICO_Minimize.png" />
-    <Content Include="recursos\ICO_Producto.png" />
-    <Content Include="recursos\ICO_Regresar.png" />
-    <Content Include="recursos\ICO_Select.png" />
+    <Content Include="recursos\ICO_Categoria.png" />
+    <Content Include="recursos\ICO_Cerrar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Clientes.png" />
+    <Content Include="recursos\ICO_Hide.png" />
+    <Content Include="recursos\ICO_Impuesto.png" />
+    <Content Include="recursos\ICO_Lock.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Guardar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Image.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Importar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Login.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Mantenimiento.png" />
+    <Content Include="recursos\ICO_Marca.png" />
+    <Content Include="recursos\ICO_Maximize.png" />
+    <Content Include="recursos\ICO_Minimize.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Principal.png" />
+    <Content Include="recursos\ICO_Producto.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Proveedor.png" />
+    <Content Include="recursos\ICO_Regresar.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_Select.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_UsuarioBlack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="recursos\ICO_UsuarioWhite.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="recursos\logoApp.ico" />
-    <Content Include="recursos\Ttl_SeleccionUsuario.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
