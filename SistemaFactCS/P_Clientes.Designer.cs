@@ -1,6 +1,6 @@
 ﻿namespace SistemaFactCS
 {
-    partial class P_Clientes
+    partial class PClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -32,15 +32,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(P_Clientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PClientes));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAgregar = new Guna.UI2.WinForms.Guna2Button();
             this.dgvClientes = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtBuscarCliente = new Guna.UI2.WinForms.Guna2TextBox();
             this.mnuAcciones = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtBuscarCliente = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.mnuAcciones.SuspendLayout();
@@ -74,7 +74,7 @@
             this.btnAgregar.Font = new System.Drawing.Font("Noto Sans Georgian Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.Color.White;
             this.btnAgregar.HoverState.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnAgregar.HoverState.FillColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnAgregar.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAgregar.Location = new System.Drawing.Point(0, 0);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(836, 60);
@@ -138,27 +138,6 @@
             this.dgvClientes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvClientes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // txtBuscarCliente
-            // 
-            this.txtBuscarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtBuscarCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtBuscarCliente.DefaultText = "";
-            this.txtBuscarCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtBuscarCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtBuscarCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBuscarCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtBuscarCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBuscarCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtBuscarCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtBuscarCliente.IconRight = ((System.Drawing.Image)(resources.GetObject("txtBuscarCliente.IconRight")));
-            this.txtBuscarCliente.Location = new System.Drawing.Point(26, 48);
-            this.txtBuscarCliente.Name = "txtBuscarCliente";
-            this.txtBuscarCliente.PlaceholderText = "Enter para buscar";
-            this.txtBuscarCliente.SelectedText = "";
-            this.txtBuscarCliente.Size = new System.Drawing.Size(781, 36);
-            this.txtBuscarCliente.TabIndex = 4;
-            // 
             // mnuAcciones
             // 
             this.mnuAcciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
@@ -191,6 +170,27 @@
             this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
+            // txtBuscarCliente
+            // 
+            this.txtBuscarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscarCliente.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBuscarCliente.DefaultText = "";
+            this.txtBuscarCliente.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBuscarCliente.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBuscarCliente.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBuscarCliente.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBuscarCliente.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBuscarCliente.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBuscarCliente.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBuscarCliente.IconRight = ((System.Drawing.Image)(resources.GetObject("txtBuscarCliente.IconRight")));
+            this.txtBuscarCliente.Location = new System.Drawing.Point(26, 48);
+            this.txtBuscarCliente.Name = "txtBuscarCliente";
+            this.txtBuscarCliente.PlaceholderText = "Enter para buscar";
+            this.txtBuscarCliente.SelectedText = "";
+            this.txtBuscarCliente.Size = new System.Drawing.Size(781, 36);
+            this.txtBuscarCliente.TabIndex = 4;
+            // 
             // P_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,7 +202,7 @@
             this.Controls.Add(this.dgvClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "P_Clientes";
+            this.Name = "PClientes";
             this.Text = "Clientes";
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();

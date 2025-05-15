@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace SistemaFactCS.Modelo
 {
-    internal class clsUsuarios
+    internal class ClsUsuarios
     {
-        internal int ID { get; set; }
-        internal string codigo { get; set; }
-        internal string usuario { get; set; }
-        internal string clave { get; set; }
-        internal string color { get; set; }
+        internal int Id { get; set; }
+        internal string Codigo { get; set; }
+        internal string Usuario { get; set; }
+        internal string Clave { get; set; }
+        internal string Color { get; set; }
         //Administrador 0, usuario normal 1
-        internal int tipo { get; set; }
+        internal int Tipo { get; set; }
 
         //COnstructor vacío
-        public clsUsuarios() { }
+        public ClsUsuarios() { }
 
 
 

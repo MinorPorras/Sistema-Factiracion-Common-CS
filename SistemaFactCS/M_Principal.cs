@@ -10,51 +10,53 @@ using System.Windows.Forms;
 using SistemaFactCS.Modelo;
 using System.Configuration;
 using System.IO;
+using SistemaFactCS.clases;
 
 namespace SistemaFactCS
 {
-    public partial class M_Principal: Form
+    public partial class MPrincipal: Form
     {
-        clsMensajes msg = new clsMensajes();
-        private Form activeForm = null;
-        internal clsUsuarios usuario = new clsUsuarios();
+        ClsMensajes _msg = new ClsMensajes();
+        FormMovement _formMove = FormMovement.Instancia;
+        private Form _activeForm = null;
+        internal ClsUsuarios Usuario = new ClsUsuarios();
 
-        public M_Principal()
+        public MPrincipal()
         {
             InitializeComponent();
             btnMinimize.Visible = false;
             btnMinimize.Enabled = false;
         }
 
-        private void openCHildForm(Form ChildForm)
+        internal void OpenCHildForm(Form childForm)
         {
             //Si hay algún form abierto lo cierra
-            if (activeForm != null)
-                activeForm.Close();
+            if (_activeForm != null)
+                _activeForm.Close();
             //Muestra el nuevo form como el activo
-            activeForm = ChildForm;
+            _activeForm = childForm;
             //se establece el formualrio como uncontrol,en vez de un form
-            ChildForm.TopLevel = false;
+            childForm.TopLevel = false;
             // se quita el borde del form
-            ChildForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.FormBorderStyle = FormBorderStyle.None;
             // Se establece el tamaño del form
-            ChildForm.Dock = DockStyle.Fill;
+            childForm.Dock = DockStyle.Fill;
             //Se agrega el form al panel
-            panelPestañaActual.Controls.Add(ChildForm);
+            panelPestañaActual.Controls.Add(childForm);
             // Se establece el tag del panel como el form
-            panelPestañaActual.Tag = ChildForm;
+            panelPestañaActual.Tag = childForm;
             //Se muestra el form frente a todo lo demás
-            ChildForm.Show();
-            ChildForm.BringToFront();
+            childForm.Show();
+            childForm.BringToFront();
         }
 
 
 
         private void M_Principal_Load(object sender, EventArgs e)
         {
-             if (usuario != null)
+             if (Usuario != null)
             {
-                lblUsuario.Text = $"Usuario: {usuario.usuario}";
+                lblUsuario.Text = $"Usuario: {Usuario.Usuario}";
             }
              string empresa = ConfigurationManager.AppSettings["Empresa"];
             lblNomEmpresa.Text = empresa;
@@ -68,6 +70,18 @@ namespace SistemaFactCS
                 picLogo.Image = Image.FromFile(".\recursos\\ICO_Image.png");
             }
 
+        }
+
+        private void timAnimTitulo_Tick(object sender, EventArgs e)
+        {
+            if (lblNomPestaña.Left > 0)
+            {
+                lblNomPestaña.Left -= 10;
+            }
+            else
+            {
+                timAnimTitulo.Stop();
+            }
         }
 
         private void btnPrincipal_Click(object sender, EventArgs e)
@@ -102,51 +116,49 @@ namespace SistemaFactCS
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            lblNomPestaña.Text = "Usuarios";
-            //Abre la pestaña de mantenimiento correspondiente
-            openCHildForm(new P_Usuarios());
+            //Abre la pestaña de mantenimiento correspondiente y coloca su titulo en la parte superior
+            _formMove.OpenCHildForm(new PUsuarios(), "Usuarios");
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            lblNomPestaña.Text = "Clientes";
-            //Abre la pestaña de mantenimiento correspondiente
-            openCHildForm(new P_Clientes());
+            //Abre la pestaña de mantenimiento correspondiente y coloca su titulo en la parte superior
+            _formMove.OpenCHildForm(new PClientes(), "Clientes");
         }
 
         private void btnProveedores_Click(object sender, EventArgs e)
         {
             lblNomPestaña.Text = "Proveedores";
-            //Abre la pestaña de mantenimiento correspondiente
+            //Abre la pestaña de mantenimiento correspondiente y coloca su titulo en la parte superior
         }
 
         private void btnImpuestos_Click(object sender, EventArgs e)
         {
             lblNomPestaña.Text = "Impuestos";
-            //Abre la pestaña de mantenimiento correspondiente
+            //Abre la pestaña de mantenimiento correspondiente y coloca su titulo en la parte superior
         }
 
         private void btnCategoria_Click(object sender, EventArgs e)
         {
             lblNomPestaña.Text = "Categorías";
-            //Abre la pestaña de mantenimiento correspondiente
+            //Abre la pestaña de mantenimiento correspondiente y coloca su titulo en la parte superior
         }
 
         private void btnMarcas_Click(object sender, EventArgs e)
         {
             lblNomPestaña.Text = "Marcas";
-            //Abre la pestaña de mantenimiento correspondiente
+            //Abre la pestaña de mantenimiento correspondiente y coloca su titulo en la parte superior
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
             lblNomPestaña.Text = "Productos";
-            //Abre la pestaña de mantenimiento correspondiente
+            //Abre la pestaña de mantenimiento correspondiente y coloca su titulo en la parte superior
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            msg.msgCerrarApp();
+            _msg.MsgCerrarApp();
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -173,11 +185,8 @@ namespace SistemaFactCS
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            usuario.Equals(null);
-            M_SeleccionUsuario selectUsu = new M_SeleccionUsuario();
-            selectUsu.Show();
-            selectUsu.BringToFront();
-            this.Close();
+            Usuario.Equals(null);
+            _formMove.OpenSelectionForm(1);
         }
     }
 }

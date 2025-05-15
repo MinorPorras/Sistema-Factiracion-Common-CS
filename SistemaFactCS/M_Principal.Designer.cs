@@ -1,6 +1,6 @@
 ﻿namespace SistemaFactCS
 {
-    partial class M_Principal
+    partial class MPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(M_Principal));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MPrincipal));
             this.panelMenuPrin = new Guna.UI2.WinForms.Guna2Panel();
             this.btnAcercaDe = new Guna.UI2.WinForms.Guna2Button();
             this.btnConfig = new Guna.UI2.WinForms.Guna2Button();
@@ -58,6 +58,9 @@
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.panelPestañaActual = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.DragControlPanelTitulo = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.DragConLblPestaña = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.timAnimTitulo = new System.Windows.Forms.Timer(this.components);
             this.panelMenuPrin.SuspendLayout();
             this.subMenuMant.SuspendLayout();
             this.panelCuenta.SuspendLayout();
@@ -535,10 +538,9 @@
             // 
             // lblNomPestaña
             // 
-            this.lblNomPestaña.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblNomPestaña.Font = new System.Drawing.Font("Noto Sans Georgian Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomPestaña.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblNomPestaña.Location = new System.Drawing.Point(0, 0);
+            this.lblNomPestaña.ForeColor = System.Drawing.Color.White;
+            this.lblNomPestaña.Location = new System.Drawing.Point(73, 0);
             this.lblNomPestaña.Name = "lblNomPestaña";
             this.lblNomPestaña.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.lblNomPestaña.Size = new System.Drawing.Size(335, 45);
@@ -588,7 +590,6 @@
             // panelPestañaActual
             // 
             this.panelPestañaActual.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panelPestañaActual.BorderThickness = 1;
             this.panelPestañaActual.Controls.Add(this.label1);
             this.panelPestañaActual.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPestañaActual.Location = new System.Drawing.Point(230, 45);
@@ -610,6 +611,23 @@
             this.label1.Text = "Seleccione alguna opción para visualizarla";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // DragControlPanelTitulo
+            // 
+            this.DragControlPanelTitulo.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControlPanelTitulo.TargetControl = this.panelTituloPestaña;
+            this.DragControlPanelTitulo.UseTransparentDrag = true;
+            // 
+            // DragConLblPestaña
+            // 
+            this.DragConLblPestaña.DockIndicatorTransparencyValue = 0.6D;
+            this.DragConLblPestaña.TargetControl = this.lblNomPestaña;
+            this.DragConLblPestaña.UseTransparentDrag = true;
+            // 
+            // timAnimTitulo
+            // 
+            this.timAnimTitulo.Interval = 1;
+            this.timAnimTitulo.Tick += new System.EventHandler(this.timAnimTitulo_Tick);
+            // 
             // M_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -621,7 +639,7 @@
             this.Controls.Add(this.panelMenuPrin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "M_Principal";
+            this.Name = "MPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             this.Load += new System.EventHandler(this.M_Principal_Load);
@@ -646,7 +664,6 @@
         private Guna.UI2.WinForms.Guna2Panel panelTituloPestaña;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2Panel subMenuMant;
-        private System.Windows.Forms.Label lblNomPestaña;
         private Guna.UI2.WinForms.Guna2ImageButton btnMaximize;
         private Guna.UI2.WinForms.Guna2ImageButton btnCerrar;
         private Guna.UI2.WinForms.Guna2Button btnCategoria;
@@ -659,10 +676,14 @@
         private Guna.UI2.WinForms.Guna2Button btnReportes;
         private Guna.UI2.WinForms.Guna2ImageButton btnMinimize;
         private Guna.UI2.WinForms.Guna2ImageButton btnHide;
-        private Guna.UI2.WinForms.Guna2Panel panelPestañaActual;
         private Guna.UI2.WinForms.Guna2Button btnConfig;
         private Guna.UI2.WinForms.Guna2Button btnAcercaDe;
         private Guna.UI2.WinForms.Guna2ImageButton btnLogOut;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2DragControl DragControlPanelTitulo;
+        private Guna.UI2.WinForms.Guna2DragControl DragConLblPestaña;
+        public Guna.UI2.WinForms.Guna2Panel panelPestañaActual;
+        public System.Windows.Forms.Label lblNomPestaña;
+        public System.Windows.Forms.Timer timAnimTitulo;
     }
 }

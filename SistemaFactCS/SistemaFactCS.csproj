@@ -95,6 +95,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clases\FormMovement.cs" />
+    <Compile Include="E_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_Usuario.Designer.cs">
+      <DependentUpon>E_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Logica\clsCONEXION.cs" />
     <Compile Include="clases\clsMensajes.cs" />
     <Compile Include="Logica\UsuariosLogica.cs" />
@@ -131,6 +138,9 @@
     <Compile Include="P_Usuarios.Designer.cs">
       <DependentUpon>P_Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="E_Usuario.resx">
+      <DependentUpon>E_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="M_Principal.resx">
       <DependentUpon>M_Principal.cs</DependentUpon>
     </EmbeddedResource>

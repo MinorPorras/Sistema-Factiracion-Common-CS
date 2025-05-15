@@ -1,55 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Configuration;
 using System.Data;
-using System.Drawing;
 using System.Data.SQLite;
-using System.Security.Cryptography;
 
 namespace SistemaFactCS
 {
-    internal class clsCONEXION
+    internal class ClsConexion
     {
         //String de conexión
-        private string conn;
+        private string _conn;
         //Conexión con la db
-        protected SQLiteConnection db;
-        private readonly DataTable dt = new DataTable();
+        protected SQLiteConnection Db;
+        private readonly DataTable _dt = new DataTable();
 
         //Cariable de uso de las propiedades
-        private int idUsuActual;
-        private string nomUsuActual;
-        private bool isAdmin;
-        private string consulta;
+        private int _idUsuActual;
+        private string _nomUsuActual;
+        private bool _isAdmin;
+        private string _consulta;
 
-        private clsMensajes msg = new clsMensajes();
+        private ClsMensajes _msg = new ClsMensajes();
 
         protected bool Connected()
         {
             try
             {
-                conn = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
-                if (conn != null)
+                _conn = ConfigurationManager.ConnectionStrings["conn"].ConnectionString;
+                if (_conn != null)
                 {
-                    db = new SQLiteConnection(conn);
-                    if (db.State == ConnectionState.Closed)
+                    Db = new SQLiteConnection(_conn);
+                    if (Db.State == ConnectionState.Closed)
                     {
-                        db.Open();
+                        Db.Open();
                         return true;
                     }
                 }
                 else
                 {
-                    msg.msgError("No se encontró la cadena de conexión con al base de datos, favor revisar el estado de la conexión");
+                    _msg.MsgError("No se encontró la cadena de conexión con al base de datos, favor revisar el estado de la conexión" + Db.State + _conn);
                 }
                 return false;
             }
             catch (Exception ex)
             {
-                msg.msgError($"Error al conectarse a la base de datos, por favor revise la conexión actual. Error: {ex.Message}");
+                _msg.MsgError($"Error al conectarse a la base de datos, por favor revise la conexión actual. Error: {ex.Message}");
                 return false;
             }
         }
@@ -58,9 +53,9 @@ namespace SistemaFactCS
         {
             try
             {
-                if (db != null && db.State == ConnectionState.Open)
+                if (Db != null && Db.State == ConnectionState.Open)
                 {
-                    db.Close();
+                    Db.Close();
                     return true;
                 }
                 else
@@ -70,7 +65,7 @@ namespace SistemaFactCS
             }
             catch (Exception ex)
             {
-                msg.msgError($"Error al desconectarse de la base de datos, por favor revise la conexión actual. Error: {ex.Message}");
+                _msg.MsgError($"Error al desconectarse de la base de datos, por favor revise la conexión actual. Error: {ex.Message}");
                 return false;
             }
         }
@@ -81,13 +76,13 @@ namespace SistemaFactCS
             {
                 if (Connected())
                 {
-                    dt.Clear();
+                    _dt.Clear();
                     using (cmd)
                     {
-                        cmd.Connection = db;
+                        cmd.Connection = Db;
                         using (SQLiteDataAdapter da = new SQLiteDataAdapter(cmd))
                         {
-                            da.Fill(dt);
+                            da.Fill(_dt);
                         }
                     }
                 }
@@ -96,12 +91,80 @@ namespace SistemaFactCS
             {
                 {
                     Disconnected();
-                    msg.msgError($"Error al cargar la tabla. Error: {ex.Message}");
-                    return dt;
+                    _msg.MsgError($"Error al cargar la tabla. Error: {ex.Message}");
+                    return _dt;
                 }
             }
             Disconnected();
-            return dt;
+            return _dt;
+        }
+
+        internal string GetAppSetting(string key)
+        {
+            string value = ConfigurationManager.AppSettings.Get(key);
+            return value;
+        }
+
+        internal string ObtenerCods(string tabla, string atributo, string config)
+        {
+            List<int> lista = new List<int>();
+            string codActual = "0";
+            try
+            {
+                //Se limpia la tabla, y se hace la consulta, añadiendo cada ID a la lista
+                _dt.Clear();
+                _consulta = $"SELECT {atributo} FROM {tabla}";
+                using (SQLiteCommand cmd = new SQLiteCommand(_consulta))
+                {
+                    CargarTabla(cmd);
+                    //SI hay una fila o más en la tabla se llena la lista
+                    if (_dt.Rows.Count > 0)
+                    {
+                        foreach (DataRow row in _dt.Rows)
+                        {
+                            if (int.TryParse(row[atributo].ToString(), out int cod))
+                            {
+                                lista.Add(cod);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        //Si no se carga ningúnID solo se devuelve el número 1 dentro de la lista, ya que es el primero código que se creara
+                        lista.Add(1);
+                    }
+                }
+
+                //Se ordena la lista
+                lista.Sort();
+                //Se obtiene el número de digitos deseado dentro del config de esta tabla
+                int numConfig = Convert.ToInt32(GetAppSetting(config));
+
+                int codigoDisponible = 1;
+                foreach (int codigo in lista)
+                {
+                    //Si el código = codigo disponible se aumenta en uno porque este ya extiste en la base de datos
+                    if (codigo == codigoDisponible)
+                    {
+                        codigoDisponible++;
+                    }
+                    else if (codigo > codigoDisponible) { 
+                        //Si el código es mayor que el codigo disponible, este habrá encontrado el siguiente código a usar
+                        //Si va 1, 2, 4; al llegar al codigoDIsponible = 3 el valor de codigo será 4, por lo que 3 es el siguiente código disponible
+                        break;
+                    }
+                }
+                codActual = codigoDisponible.ToString($"D{numConfig}");
+            }
+            catch (Exception ex)
+            {
+                //EN caso de error se desconecta y muestra un mensaje infromando un error para luego devolver un string vacío
+                Disconnected();
+                _msg.MsgError($"Error al cargar la lista. Error: {ex.Message}");
+                return "";
+            }
+            Disconnected();
+            return codActual;
         }
     }
 }

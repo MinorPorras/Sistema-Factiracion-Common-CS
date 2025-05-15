@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaFactCS
 {
-    public partial class P_Clientes: Form
+    public partial class PClientes: Form
     {
-        public P_Clientes()
+        public PClientes()
         {
             InitializeComponent();
         }

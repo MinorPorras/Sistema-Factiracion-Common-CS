@@ -1,6 +1,6 @@
 ﻿namespace SistemaFactCS
 {
-    partial class M_SeleccionUsuario
+    partial class MSeleccionUsuario
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(M_SeleccionUsuario));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MSeleccionUsuario));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.btnCerrar = new Guna.UI2.WinForms.Guna2ImageButton();
             this.btnHide = new Guna.UI2.WinForms.Guna2ImageButton();
@@ -128,7 +128,7 @@
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.flpUsuarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "M_SeleccionUsuario";
+            this.Name = "MSeleccionUsuario";
             this.Load += new System.EventHandler(this.M_SeleccionUsuario_Load);
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);

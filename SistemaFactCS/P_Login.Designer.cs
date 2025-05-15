@@ -1,6 +1,6 @@
 ﻿namespace SistemaFactCS
 {
-    partial class P_Login
+    partial class PLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(P_Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PLogin));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnRegresar = new Guna.UI2.WinForms.Guna2Button();
@@ -41,9 +41,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtUsuario = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.lblNomPestaña = new System.Windows.Forms.Label();
-            this.btnMaximize = new Guna.UI2.WinForms.Guna2ImageButton();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -123,7 +121,7 @@
             this.btnMinimize.ImageOffset = new System.Drawing.Point(0, 0);
             this.btnMinimize.ImageRotate = 0F;
             this.btnMinimize.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnMinimize.Location = new System.Drawing.Point(280, 3);
+            this.btnMinimize.Location = new System.Drawing.Point(325, 3);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.PressedState.ImageSize = new System.Drawing.Size(40, 40);
             this.btnMinimize.Size = new System.Drawing.Size(39, 38);
@@ -222,9 +220,7 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Controls.Add(this.guna2ImageButton1);
             this.guna2Panel2.Controls.Add(this.lblNomPestaña);
-            this.guna2Panel2.Controls.Add(this.btnMaximize);
             this.guna2Panel2.Controls.Add(this.btnMinimize);
             this.guna2Panel2.Controls.Add(this.btnCerrar);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -233,22 +229,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(412, 45);
             this.guna2Panel2.TabIndex = 8;
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(38, 38);
-            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(325, 3);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(39, 38);
-            this.guna2ImageButton1.TabIndex = 5;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
             // 
             // lblNomPestaña
             // 
@@ -264,23 +244,6 @@
             this.lblNomPestaña.TabIndex = 3;
             this.lblNomPestaña.Text = "Inicio de sesión";
             this.lblNomPestaña.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMaximize.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnMaximize.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnMaximize.HoverState.ImageSize = new System.Drawing.Size(38, 38);
-            this.btnMaximize.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximize.Image")));
-            this.btnMaximize.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnMaximize.ImageRotate = 0F;
-            this.btnMaximize.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnMaximize.Location = new System.Drawing.Point(325, 3);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnMaximize.Size = new System.Drawing.Size(39, 38);
-            this.btnMaximize.TabIndex = 3;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // P_Login
             // 
@@ -300,7 +263,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Name = "P_Login";
+            this.Name = "PLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesión";
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -324,8 +287,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtClave;
         internal Guna.UI2.WinForms.Guna2TextBox txtUsuario;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private System.Windows.Forms.Label lblNomPestaña;
-        private Guna.UI2.WinForms.Guna2ImageButton btnMaximize;
     }
 }

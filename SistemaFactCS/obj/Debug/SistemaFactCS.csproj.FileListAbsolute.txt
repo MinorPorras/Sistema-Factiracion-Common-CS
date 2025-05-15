@@ -1,7 +1,5 @@
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.csproj.AssemblyReference.cache
-C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.M_SeleccionUsuario.resources
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.Properties.Resources.resources
-C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.M_SeleccionUsuario.es-CR.resources
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.csproj.GenerateResource.cache
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\bin\Debug\SistemaFactCS.exe.config
@@ -36,7 +34,10 @@ C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\bin\Debug\recursos\ICO_Re
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\bin\Debug\recursos\ICO_Select.png
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\bin\Debug\recursos\ICO_UsuarioBlack.png
 C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\bin\Debug\recursos\ICO_UsuarioWhite.png
-C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.P_Login.resources
-C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.M_Principal.resources
-C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.P_Usuarios.resources
-C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.P_Clientes.resources
+C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.EUsuario.resources
+C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.MPrincipal.resources
+C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.MSeleccionUsuario.resources
+C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.PClientes.resources
+C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.PLogin.resources
+C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.PUsuarios.resources
+C:\Users\User\source\repos\SistemaFactCS\SistemaFactCS\obj\Debug\SistemaFactCS.MSeleccionUsuario.es-CR.resources

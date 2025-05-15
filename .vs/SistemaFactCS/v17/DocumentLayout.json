@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\p_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\p_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\logica\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\logica\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\p_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\p_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\e_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\e_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\e_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\e_usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\p_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\p_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\p_usuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\p_usuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\logica\\clsconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\logica\\clsconexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\m_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\m_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\modelo\\clsusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\modelo\\clsusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\m_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\m_principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|c:\\users\\user\\source\\repos\\sistemafactcs\\sistemafactcs\\m_seleccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\m_seleccionusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\logica\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\logica\\usuarioslogica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|C:\\Users\\User\\source\\repos\\SistemaFactCS\\sistemafactcs\\p_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B2CD331F-96D9-41DB-8A84-E7C7DE2B6FBF}|SistemaFactCS\\SistemaFactCS.csproj|solutionrelative:sistemafactcs\\p_usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,107 +42,109 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "M_SeleccionUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_SeleccionUsuario.cs",
-              "RelativeDocumentMoniker": "SistemaFactCS\\M_SeleccionUsuario.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_SeleccionUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaFactCS\\M_SeleccionUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T04:16:50.226Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "P_Clientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Clientes.cs",
-              "RelativeDocumentMoniker": "SistemaFactCS\\P_Clientes.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Clientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaFactCS\\P_Clientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T04:02:45.099Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "E_Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\E_Usuario.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\E_Usuario.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\E_Usuario.cs",
+              "RelativeToolTip": "SistemaFactCS\\E_Usuario.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAIwH0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T21:48:15.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "E_Usuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\E_Usuario.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\E_Usuario.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\E_Usuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "SistemaFactCS\\E_Usuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T21:48:12.42Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "P_Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Usuarios.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\P_Usuarios.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Usuarios.cs",
+              "RelativeToolTip": "SistemaFactCS\\P_Usuarios.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAvwDgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T21:56:26.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "clsCONEXION.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "RelativeToolTip": "SistemaFactCS\\Logica\\clsCONEXION.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwE0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T23:25:43.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosLogica.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "RelativeToolTip": "SistemaFactCS\\Logica\\UsuariosLogica.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAIgAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T20:05:43.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "P_Usuarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Usuarios.Designer.cs",
+              "RelativeDocumentMoniker": "SistemaFactCS\\P_Usuarios.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Usuarios.Designer.cs",
+              "RelativeToolTip": "SistemaFactCS\\P_Usuarios.Designer.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAASwIAAAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T05:32:36.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\App.config",
+              "RelativeDocumentMoniker": "SistemaFactCS\\App.config",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\App.config",
+              "RelativeToolTip": "SistemaFactCS\\App.config",
+              "ViewState": "AgIAABQAAAAAAAAAAAAYwCMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-22T20:00:41.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "P_Usuarios.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Usuarios.cs",
               "RelativeDocumentMoniker": "SistemaFactCS\\P_Usuarios.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\P_Usuarios.cs [Dise\u00F1o]",
               "RelativeToolTip": "SistemaFactCS\\P_Usuarios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T03:58:47.672Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\App.config",
-              "RelativeDocumentMoniker": "SistemaFactCS\\App.config",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\App.config",
-              "RelativeToolTip": "SistemaFactCS\\App.config",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-03-20T03:05:09.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "M_Principal.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_Principal.cs",
-              "RelativeDocumentMoniker": "SistemaFactCS\\M_Principal.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_Principal.cs",
-              "RelativeToolTip": "SistemaFactCS\\M_Principal.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAjwKsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T00:55:43.039Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "M_Principal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_Principal.cs",
-              "RelativeDocumentMoniker": "SistemaFactCS\\M_Principal.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\M_Principal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "SistemaFactCS\\M_Principal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T22:07:46.977Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "clsUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Modelo\\clsUsuarios.cs",
-              "RelativeDocumentMoniker": "SistemaFactCS\\Modelo\\clsUsuarios.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Modelo\\clsUsuarios.cs",
-              "RelativeToolTip": "SistemaFactCS\\Modelo\\clsUsuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T22:02:05.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UsuariosLogica.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\UsuariosLogica.cs",
-              "RelativeDocumentMoniker": "SistemaFactCS\\Logica\\UsuariosLogica.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\SistemaFactCS\\SistemaFactCS\\Logica\\UsuariosLogica.cs",
-              "RelativeToolTip": "SistemaFactCS\\Logica\\UsuariosLogica.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowD8AAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T06:09:58.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T21:48:11.36Z"
             }
           ]
         }

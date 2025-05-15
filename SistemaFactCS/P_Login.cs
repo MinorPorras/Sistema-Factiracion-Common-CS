@@ -7,17 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SistemaFactCS.clases;
 using SistemaFactCS.Logica;
 using SistemaFactCS.Modelo;
 
 namespace SistemaFactCS
 {
-    public partial class P_Login: Form
+    public partial class PLogin: Form
     {
-        clsMensajes msg = new clsMensajes();
-        private clsUsuarios usuario = new clsUsuarios();
+        ClsMensajes _msg = new ClsMensajes();
+        private ClsUsuarios _usuario = new ClsUsuarios();
+        FormMovement _formMove = FormMovement.Instancia;
 
-        public P_Login()
+        public PLogin()
         {
             InitializeComponent();
             btnMinimize.Visible = false;
@@ -36,54 +38,31 @@ namespace SistemaFactCS
 
         private void btnRegresar_Click(object sender, EventArgs e)
         {
-            M_SeleccionUsuario selectUsu = new M_SeleccionUsuario();
-            selectUsu.Show();
-            this.Close();
+            _formMove.OpenSelectionForm(2);
+            this.Dispose();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            usuario.usuario = txtUsuario.Text;
-            usuario.clave = txtClave.Text;
-            //Se verifican las credenciales del usurio y se asigna en el objeto el ID, tipo de cuenta y nombre
-            usuario = UsuariosLogica.Instancia.verificarCredenciales(usuario);
-            if (usuario.ID > 0)
+            _usuario.Usuario = txtUsuario.Text;
+            _usuario.Clave = txtClave.Text;
+            //Se verifican las credenciales del usuario y se asigna en el objeto el ID, tipo de cuenta y nombre
+            _usuario = UsuariosLogica.Instancia.VerificarCredenciales(_usuario);
+            if (_usuario.Id > 0)
             {
-                M_Principal m_Principal = new M_Principal();
-                m_Principal.usuario = usuario;
-                usuario = null;
-                m_Principal.Show();
-                m_Principal.BringToFront();
-                this.Close();
+                _formMove.OpenParentForm(_usuario.Usuario);
+                this.Dispose();
             }
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
-            msg.msgCerrarApp();
+            _msg.MsgCerrarApp();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btnMaximize.Visible = false;
-            btnMaximize.Enabled = false;
-            btnMinimize.Enabled = true;
-            btnMinimize.Visible = true;
-        }
-
-        private void guna2ImageButton1_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btnMinimize.Visible = false;
-            btnMinimize.Enabled = false;
-            btnMaximize.Visible = true;
-            btnMaximize.Enabled = true;
         }
     }
 }

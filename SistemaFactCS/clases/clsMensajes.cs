@@ -9,16 +9,16 @@ using System.Windows.Forms;
 
 namespace SistemaFactCS
 {
-    class clsMensajes
+    class ClsMensajes
     {
         internal DialogResult Result { get; set; }
-        internal DialogResult mensaje(string texto, string titulo, MessageBoxButtons btn, MessageBoxIcon ico)
+        internal DialogResult Mensaje(string texto, string titulo, MessageBoxButtons btn, MessageBoxIcon ico)
         {
             Result = MessageBox.Show(texto, titulo, btn, ico);
             return Result;
         }
 
-        internal DialogResult msgGuardar()
+        internal DialogResult MsgGuardar()
         {
             MessageBoxButtons btn = MessageBoxButtons.OKCancel;
             string message = "¿Desea guardar los cambios?";
@@ -27,7 +27,7 @@ namespace SistemaFactCS
             return Result;
         }
 
-        internal void msgCerrarApp()
+        internal void MsgCerrarApp()
         {
             MessageBoxButtons btn = MessageBoxButtons.OKCancel;
             string message = "¿Desea cerrar la aplicación?";
@@ -39,12 +39,12 @@ namespace SistemaFactCS
             }
         }
 
-        internal void msgError(string texto)
+        internal void MsgError(string texto)
         {
             MessageBox.Show(texto, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        internal void msgDatoAlmacenado()
+        internal void MsgDatoAlmacenado()
         {
             MessageBoxButtons btn = MessageBoxButtons.OK;
             string message = "Dartos almacenados correctamente";
@@ -52,7 +52,7 @@ namespace SistemaFactCS
             MessageBox.Show(message, title, btn, MessageBoxIcon.Information);
         }
 
-        internal void msgDatoEliminado()
+        internal void MsgDatoEliminado()
         {
             MessageBoxButtons btn = MessageBoxButtons.OK;
             string message = "Datos dados de baja correctamente";
@@ -60,7 +60,7 @@ namespace SistemaFactCS
             MessageBox.Show(message, title, btn, MessageBoxIcon.Information);
         }
 
-        internal void msgRestart()
+        internal void MsgRestart()
         {
             MessageBoxButtons btn = MessageBoxButtons.OKCancel;
             string message = "Acción realizada exisamente, para reflejar los cambios correctamente se debe de reiniciar la app. ¿Desea reiniciar la aplicación?";
