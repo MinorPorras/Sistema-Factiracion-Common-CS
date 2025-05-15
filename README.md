@@ -1,3 +1,7 @@
+**ALPHA 3 (14 de mayor de 2025)
+- Se modificó la sintaxis de los if y algunas funciones para facilitar su lectura y que ocupen menos lineas de código
+- Se agregó la función de eliminación de usuarios
+
 **ALPHA 2 (19 de marzo de 2025)**
 - Se desarrolló el formulario de login y ya funciona correctamente el proceso de inicio de sesión
 - Se creó la pestaña principal, su interfaz responsiva y una demo de como se abrirían las pestañas desde el form principal
