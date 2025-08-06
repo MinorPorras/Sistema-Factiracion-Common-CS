@@ -12,3 +12,5 @@
 - Se desarrollo la base de la aplicación
 - Se creó el formulario de selección de usuario y sus funciones
 - Se recordó los procedimientos para el uso general del lenguaje de programación
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MinorPorras/Sistema-Factiracion-Common-CS)
